@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+/* daha kalın ve blurlu bi yazı için bunu (@import url(https://fonts.googleapis.com/css?family=Open+Sans);)  çıkarmak yapmak yeterli */
+body {
+    background: #111;
+    font-family: "Open Sans", Impact;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.area {
+    text-align: center;
+    font-size: 5em; /* yazı kalınlığı */
+    color: #fff;
+    letter-spacing: -3px;
+    font-weight: 700; 
+    text-transform: uppercase;
+    animation: blur 1.5s ease-out infinite; /*mütemadiyen olması için infinite eklenebilir*/
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@keyframes blur { 
+    from {
+        text-shadow: 0px 0px 5px #fff,
+            0px 0px 5px #fff, 
+            0px 0px 12px #fff,
+            0px 0px 12px #fff,
+            0px 0px 12px #fff,
+            0px 0px 12px #fff,
+            0px 0px 12px #fff,
+            0px 0px 12px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #7B96B8,
+            0px 0px 75px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px 10px 50px #7B96B8,
+            0px -10px 50px #7B96B8,
+            0px -10px 50px #7B96B8;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="area">Bold LIGHTNING</div>
+    </body>
+</html>
